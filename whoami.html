@@ -5,4 +5,24 @@ color: white;
 font-family: Google Sans, Roboto, Arial, Comic Sans MS, mono, sans-serif;
 }
 </style>
-<p>I don't know you, so i cannot answer that</p><br><a href="home"><--</a>
+<p>I don't know you, so i cannot answer that</p><br><a href="home"><--</a><div id="div1" class="fa"></div>
+
+<script>
+function load() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "_";
+  setTimeout(function () {
+      a.innerHTML = "";
+    }, 100);
+  setTimeout(function () {
+      a.innerHTML = "_";
+    }, 400);
+  setTimeout(function () {
+      a.innerHTML = "";
+    }, 900);
+
+}
+load();
+setInterval(load, 900);
+</script>
